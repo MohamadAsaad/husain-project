@@ -1,0 +1,513 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+/*my font*/
+
+@font-face {
+    font-family: "29ltbukrabold";
+    src: url("fonts/29ltbukrabold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "29ltbukralight";
+    src: url("fonts/29ltbukralight.otf");
+    font-weight: light;
+}
+
+@font-face {
+    font-family: "29ltbukrabolditalic";
+    src: url("fonts/29ltbukrabolditalic.otf");
+    font-weight: bolditalic;
+}
+
+/*-------*/
+
+:root {
+    --Charcoal: #122620;
+    --Gold: #D6AD60;
+    --Cream: #F4EBD0;
+    --Tan: #B68D40;
+    --main-color: #362F23;
+    --second-color: #B68D40;
+    --third-color: #82642E;
+    --forth-color: #C1AA7E;
+    --fifth-color: #362913;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+  body{
+    
+    margin: 0;
+    padding: 0;
+    
+   }
+
+/*----------nav bar---------------------------------------------*/
+nav {
+    
+  height: 60x;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+.nav-up {
+  top: -60px;
+}
+
+   .brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 767.98px) {
+    .brand{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  
+
+
+  .brand .logo{
+    width: 150px;
+    height: auto;
+  }
+  .navbar-toggler{
+    margin: 0 auto;
+    background-color: #B68D40;
+    margin-bottom: 15px;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none!important;
+  }
+  .navbar-nav {
+    /* margin: 0 auto; */
+    margin-right: 18%;
+  }
+  @media (max-width: 767.98px) {
+    .navbar-nav {
+      /* margin: 0 auto; */
+      margin-right: 0;
+    }
+  }
+   .navbar-nav .nav-link{
+    text-align: center;
+    margin-top: 0px;
+    }
+  
+  
+   .navbar-nav a{
+    font-family: '29ltbukrabold', sans-serif;
+      text-decoration: none;
+      margin: 0px 10px;
+      padding: 10px 10px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+  }
+   
+  .pullUp a:before
+  {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0px;
+      bottom: 0px;
+      content: '';
+      background: #FFF252;
+      opacity: 0.3;
+      transition: all 0.3s;
+  }
+  
+  .pullUp a:hover:before
+  {
+      height: 100%;
+  }
+/*----------hero section---------------------------------------------*/
+
+
+
+.hero-text h1{
+    font-family: "29ltbukrabold", sans-serif;
+    font-size: 34px;
+    line-height: 1.5!important;
+    /* color: #C2AC3E; */
+    color: #4e4e4e;
+}
+.hero-text p{
+    font-family: "29ltbukralight", sans-serif;
+    font-size: 20px;
+    line-height: 1.5!important;
+    /* color: #F6DB4E; */
+    color: #a2a2a2;
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+ @media (max-width: 767.98px) { 
+    .hero-text h1{
+        margin-right: 20px;
+        font-size: 25px;
+        line-height: 1.5!important;
+        margin-bottom: 30px!important;
+        text-align: center;
+    }
+    .hero-text p{
+        margin-right: 20px;
+        font-size: 15px;
+        line-height: 1.5!important;
+        text-align: center;
+        margin-bottom: 50px!important;
+    }
+    
+ } 
+ 
+/*--------------------about us -------------------------------------------------------------*/
+
+.about-us-section{
+  background-color: #4e4e4e;
+}
+
+
+.about-us-img img{
+    width: 300px;
+    /* border: 1px solid #C2AC3E;   */
+}
+
+.about-us-text h2{
+    
+    font-family: "29ltbukrabold", sans-serif;
+    font-size: 50px;
+    color: #fff;
+    line-height: 1.5!important;   
+    margin-bottom: 30px!important;
+}
+
+.about-us-text h3{
+    
+    font-family: "29ltbukrabold", sans-serif;
+    font-size: 30px;
+    color: #C2AC3E;
+    line-height: 1.5!important;   
+}
+.about-us-text p{
+    font-family: "29ltbukralight", sans-serif;
+    font-size: 15px;
+    color: white;
+    line-height: 1.5!important;
+    
+    
+}
+
+
+
+@media (max-width: 767.98px) { 
+    .about-us-img img{
+        width: 100%;
+        border: none;      
+    }
+    .about-us-text h2{
+        font-size: 40px;
+        margin-bottom: 30px!important;
+        text-align: center; 
+    }
+    .about-us-text h3{
+        font-size: 20px;
+        margin-bottom: 30px!important;
+        text-align: center; 
+    }
+    .about-us-text p{
+        font-size: 15px;
+        line-height: 2!important;
+        margin-bottom: 50px!important;
+        
+        text-align: center;
+    }
+    
+ } 
+
+
+ /* ----------------our services section ----------------*/
+
+ .services{
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        z-index: +4;
+        
+      }
+        
+      .services .serviceshead-section{
+        text-align: center;
+      }
+      .services .serviceshead-section .services-head{
+        font-family: '29ltbukrabold', sans-serif;
+        color: #B68D40;
+        font-size: 3rem;
+        margin-top: 45px;
+        margin-bottom: 25px;
+        
+      }
+      .services .serviceshead-section .services-head span{
+        color: crimson;
+      }
+      .services .serviceshead-section .divider{
+        height: 5px;
+        width: 100px;
+        background-color: #F6DB4E;
+        margin: 5px auto;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+      .services .serviceshead-section .services-subhead{
+        font-family: '29ltbukrabold', sans-serif;
+        font-size: 1.1rem;
+        color: #f8a407;
+      }
+      .services .services-section{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      
+      .services .services-section .services-card a{
+        text-decoration: none;
+      }
+      
+      .services .services-section .info{
+        
+        width: 100%;
+        height: 250px;
+        /* margin: 10px; */
+        margin-bottom: 30px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%), 0 5px 18px 0 rgb(0 0 0 / 19%);
+        border-radius: 10px;
+      }
+      
+      .services .services-section .info .fab,.fas,.far{
+        color: #5e4747;
+        font-size: 3rem;
+        margin: 15px 0;
+      }
+      
+      .services .services-section .info .info-title{
+        font-family: 'Reem Kufi', sans-serif;
+        color: #B68D40;
+        font-size: 2rem;
+      }
+      .services .services-section .info .info-subtitle{
+        font-family: '29ltbukralight', sans-serif;
+        font-size: 13px;
+        color: #f8a407;
+      }
+      
+      
+      .services .divider-3{
+        position: absolute;
+        width: 100%;
+        bottom: -1px;
+        z-index: -1;
+      }
+/*--------------mobile--------*/
+@media (max-width: 767.98px) { 
+  .services-section .info{
+       margin: 15px auto!important; 
+      width: 330px!important;
+  } 
+} 
+
+/*----------------Animated hover button------------*/
+ 
+.button_su{
+  overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.su_button_circle{
+  background-color: red;
+    border-radius: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    pointer-events: none;
+  animation-timing-function: ease-in-out;
+}
+
+.button_su_inner{
+  display: inline-block;
+  transition: 400ms;
+  z-index: 100000;
+}
+
+.button_text_container{
+   position:relative;
+   z-index: 10000;
+}
+
+.explode-circle {
+   animation: explode 0.5s forwards;
+
+}
+
+.desplode-circle{
+   animation: desplode 0.5s forwards;
+}
+
+@keyframes explode {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgba(42, 53, 80,0.2);
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(20, 180, 87,0.8);
+  }
+}
+
+@keyframes desplode {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(20, 180, 87,0.8);
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgba(129, 80, 108,0.6);
+  }
+}
+      
+      
+      
+
+
+
+
+      /* --------------------footer-------------------------- */
+      footer{
+
+          width: 100%;
+          height: 768px;
+          background-image: url(img/footer-img.jpg);
+          background-size: cover;
+          border: 0.5px solid red;
+          }
+          
+      
+      footer .footer-container{
+          background-color: white;
+          height: 438px;
+          margin-top: 15%;
+          border: 1px solid #795548;
+          box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 12px 30px 0 rgb(0 0 0 / 19%);
+    
+      }
+      footer .imag img{
+          width: 90%;
+          
+          margin-top: 25%;
+      }
+      .contact {
+          text-align: left;
+          font-size: 80%;
+          margin-top: 45%;
+          font-family: "29ltbukralight", sans-serif;
+    }
+    .contact .contact-icon a{
+      text-decoration: none;
+      color: #000000;
+      
+  }
+      .contact .contact-icon .fas{
+          font-size: 20px;
+          color: #F6DB4E;
+      }
+      .contact .contact-icon span{
+        padding-right: 10px;
+    }
+
+      .footer-category{
+          margin-top: 15%;
+          margin-right: 15%;
+          font-family: "29ltbukralight", sans-serif;
+          line-height: 2;
+      }
+      .footer-category  li{
+        list-style: none;
+    }
+      .footer-category a{
+        text-decoration: none;
+        color: #000000;
+    }
+
+    footer .social-media-links{
+      text-align: left;
+      margin-left: 17%;
+      margin-top: 20px;
+    }
+    footer .social-media-links a{
+      text-decoration: none;
+      color: #F6DB4E;
+    }
+    footer .social-media-links a .fab{
+      padding-right: 15px;
+      font-size: 20PX;
+    }
+
+      @media (max-width: 767.98px) { 
+
+          /*جعل الكؤد في الأعلى في الأجهزة الصغيرة*/
+
+        footer .footer-container {
+          
+          height: 500px;
+          width: 285px;
+          margin-right: 20%;
+          margin-top: 45%;
+        }
+        .first-order {
+            
+            order: -1!important;
+        }
+        footer .imag img {
+          width: 60%;
+          margin-top: 25%;
+          margin-right: 20%;
+        }
+        .contact {
+          font-size: 60%;
+          margin-top: 20px;
+          margin-left: 23%;
+          
+      }
+      footer .social-media-links{
+        margin-top: 35px;
+        margin-left: 35%;
+      }
+        
+     }
