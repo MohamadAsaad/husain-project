@@ -4,13 +4,13 @@
 $('.floating-wpp').floatingWhatsApp({
 
     // phone number
-    phone: '05398847282',
+    phone: '+905372903900',
   
     // message to send
     message: 'اكتب رسالتك',
   
     // icon size
-    size: '72px',
+    size: '50px',
   
     // background color
     backgroundColor: '#25D366',
@@ -34,7 +34,7 @@ $('.floating-wpp').floatingWhatsApp({
     headerColor: '#128C7E',
   
     // header title
-    headerTitle: 'Chat with us on WhatsApp!',
+    headerTitle: 'راسلنا عبر وتس اب !',
   
     // z-index property
     zIndex: 5,
