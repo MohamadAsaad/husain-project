@@ -6,19 +6,19 @@
 
 @font-face {
     font-family: "29ltbukrabold";
-    src: url("fonts/29ltbukrabold.otf");
+    src: url("/fonts/29ltbukrabold.otf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "29ltbukralight";
-    src: url("fonts/29ltbukralight.otf");
+    src: url("/fonts/29ltbukralight.otf");
     font-weight: light;
 }
 
 @font-face {
     font-family: "29ltbukrabolditalic";
-    src: url("fonts/29ltbukrabolditalic.otf");
+    src: url("/fonts/29ltbukrabolditalic.otf");
     font-weight: bolditalic;
 }
 
@@ -99,9 +99,11 @@ nav {
       margin-right: 0;
     }
   }
-   .navbar-nav .nav-link{
+   .navbar-nav .nav-link {
     text-align: center;
     margin-top: 0px;
+    font-family: '29ltbukrabold','Reem Kufi', sans-serif;
+    
     }
   
   
@@ -144,12 +146,30 @@ nav {
     color: #4e4e4e;
 }
 .hero-text p{
-    font-family: "29ltbukralight", sans-serif;
+  font-family: '29ltbukralight','Reem Kufi', sans-serif;
     font-size: 20px;
     line-height: 1.5!important;
     /* color: #F6DB4E; */
     color: #a2a2a2;
 }
+
+.hero-text .btn{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-top: 50px;
+}
+.hero-text .btn a{
+  text-decoration: none;
+  color: rgb(90, 90, 90);
+  font-family: '29ltbukralight','Reem Kufi', sans-serif;
+}
+.hero-text .btn:hover{
+  background-color: #f6db4e;
+}
+
 
 /* Small devices (landscape phones, less than 768px)*/
  @media (max-width: 767.98px) { 
@@ -167,13 +187,18 @@ nav {
         text-align: center;
         margin-bottom: 50px!important;
     }
+    .hero-text .btn{
+      
+      margin-top: 50px;
+      
+    }
     
  } 
  
 /*--------------------about us -------------------------------------------------------------*/
 
 .about-us-section{
-  background-color: #4e4e4e;
+  background-color: #676767;
 }
 
 
@@ -207,7 +232,27 @@ nav {
     
 }
 
-
+.about-us-text .btn{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 1px solid #f6db4e;
+  
+  margin-top: 50px;
+}
+.about-us-text .btn a{
+  text-decoration: none;
+  color: #f6db4e;
+  font-family: '29ltbukralight','Reem Kufi', sans-serif;
+}
+.about-us-text .btn:hover {
+  background-color: #f6db4e;
+}
+.about-us-text .btn:hover a{
+  color: white;
+}
 
 @media (max-width: 767.98px) { 
     .about-us-img img{
@@ -230,6 +275,10 @@ nav {
         margin-bottom: 50px!important;
         
         text-align: center;
+    }
+    .about-us-text .btn{
+      
+      margin-top: 0px;
     }
     
  } 
@@ -413,7 +462,7 @@ nav {
 
           width: 100%;
           height: 768px;
-          background-image: url(img/footer-img.jpg);
+          background-image: url(/img/footer-img.jpg);
           background-size: cover;
           border: 0.5px solid red;
           }
