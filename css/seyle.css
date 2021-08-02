@@ -544,19 +544,18 @@ nav {
             order: -1!important;
         }
         footer .imag img {
-          width: 60%;
-          margin-top: 25%;
-          margin-right: 20%;
+        width: 85%;
+        margin-top: 10%;
+        margin-right: 8%;
         }
         .contact {
           font-size: 60%;
           margin-top: 20px;
-          margin-left: 23%;
-          
-      }
-      footer .social-media-links{
-        margin-top: 35px;
-        margin-left: 35%;
-      }
+          margin-left: 15%;    
+        }
+        footer .social-media-links{
+          margin-top: 45px;
+          margin-left: 30%;
+        }
         
      }
